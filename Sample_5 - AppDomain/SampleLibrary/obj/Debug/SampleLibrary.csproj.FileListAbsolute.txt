@@ -1,0 +1,6 @@
+F:\Системное программирование\MVS проекты - примеры\Sample_5 - AppDpmain\SampleLibrary\bin\Debug\SampleLibrary.dll
+F:\Системное программирование\MVS проекты - примеры\Sample_5 - AppDpmain\SampleLibrary\bin\Debug\SampleLibrary.pdb
+F:\Системное программирование\MVS проекты - примеры\Sample_5 - AppDpmain\SampleLibrary\obj\Debug\SampleLibrary.csproj.AssemblyReference.cache
+F:\Системное программирование\MVS проекты - примеры\Sample_5 - AppDpmain\SampleLibrary\obj\Debug\SampleLibrary.csproj.CoreCompileInputs.cache
+F:\Системное программирование\MVS проекты - примеры\Sample_5 - AppDpmain\SampleLibrary\obj\Debug\SampleLibrary.dll
+F:\Системное программирование\MVS проекты - примеры\Sample_5 - AppDpmain\SampleLibrary\obj\Debug\SampleLibrary.pdb
