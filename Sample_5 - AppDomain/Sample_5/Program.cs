@@ -1,9 +1,5 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
 
 // Обычно, операционная система и среда исполнения
 // предоставляют некоторую форму изоляции приложений
