@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
@@ -44,17 +44,22 @@ namespace Sample_5
             AppDomain myDomain = AppDomain.CreateDomain("Demo Domain");
             Assembly asm = myDomain.Load(AssemblyName.GetAssemblyName("SampleLibrary.dll"));
             Module module = asm.GetModule("SampleLibrary.dll");
-            Type type = module.GetType("SampleLibrary.SampleClass");
+            Type SampleClass = module.GetType("SampleLibrary.SampleClass");
           
-            // Запоминаем и запускаем метод
-            MethodInfo method = type.GetMethod("DoSome");
-            method.Invoke(null, null);
-            
-            // Однострочный вариант вызова того же метода через
-            // анонимные объекты
+            // Работаем с библиотекой 
+            // 3 разных варианта 
+            MethodInfo method_DoSome = SampleClass.GetMethod("DoSome");
+            method_DoSome.Invoke(null, null);
+
+            MethodInfo method_DoSome1 = asm.GetModule("SampleLibrary.dll").
+            GetType("SampleLibrary.SampleClass").
+            GetMethod("DoSome");
+            method_DoSome1.Invoke(null, null);
+
             asm.GetModule("SampleLibrary.dll").
             GetType("SampleLibrary.SampleClass").
-            GetMethod("DoSome").Invoke(null, null);
+            GetMethod("DoSome").
+            Invoke(null, null);
 
             AppDomain.Unload(myDomain);
 
